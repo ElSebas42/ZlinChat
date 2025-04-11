@@ -1,16 +1,20 @@
 import { useContext } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import Header from "./components/Header";
-import Menu from './components/Menu'
+//###
 import { MainContext } from "./context/MainContext";
+//###
+import Header from "./components/Header/Header";
+import Menu from "./components/Menu";
+import Chat from "./components/Chat/Chat";
+import ChatInput from './components/ChatInput/ChatInput'
 
 function App() {
-  const { MenuOpen } = useContext(MainContext);
+  const { isMenuOpen } = useContext(MainContext);
   return (
-    <div className="bg-theme-4 text-white min-h-dvh font-default text-xl relative">
+    <div className="bg-theme-4 text-white min-h-dvh font-default text-xl relative flex flex-col items-center h-[100dvh] w-[100dvw]">
       <Header />
-      {MenuOpen && <Menu />}
+      {isMenuOpen && <Menu />}
+      <Chat />
+      <ChatInput />
     </div>
   );
 }
