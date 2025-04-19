@@ -1,0 +1,23 @@
+{
+  1: [
+    "Bot",
+    {
+      char: "Nami",
+      text: "Este es un texto de un personaje controlado por el bot, *En serio* \"Créeme\" bro",
+    },
+  ],
+  2: [
+    "User",
+    {
+      char: "Pepito Jimenez",
+      text: "Otro texto de ejempl *Ejem* sí... \"raios\"",
+    },
+  ],
+  3: [
+    "User",
+    {
+      char: "Pepito Jimenez",
+      text: "Otro ejemplo de persona. *Esto pasa si pones \"Comillas dentro\" *de asteriscos*",
+    },
+  ],
+};
