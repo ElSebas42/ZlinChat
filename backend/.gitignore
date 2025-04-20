@@ -1,0 +1,45 @@
+# Ignorar el entorno virtual de Python
+# Usa el nombre que le hayas dado, .venv es común
+.venv/
+venv/
+env/
+
+# Ignorar archivos compilados de Python
+__pycache__/
+*.pyc
+
+# Ignorar el archivo de base de datos SQLite
+*.db
+
+# Ignorar archivos de configuración local (que podrían contener secretos o rutas)
+.env
+
+# Directorios y archivos de build del backend (PyInstaller)
+dist/
+build/
+*.spec
+
+# Directorio donde se copia el build del frontend en el backend (para servirlo)
+# Ignoramos esto porque es contenido generado a partir de frontend/build
+static/
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos temporales o específicos del sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.localized
+
+# Ignorar directorios y archivos específicos de IDEs comunes
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Ignorar archivos de swap de Vim/Nano si los usas
+*~
+\#*
